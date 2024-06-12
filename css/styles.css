@@ -105,6 +105,7 @@ body .wrap {
 }
 .header .top ul {
   display: flex;
+  margin-bottom: 0px;
 }
 .header .top ul a {
   font-family: "Roboto";
@@ -134,6 +135,7 @@ body .wrap {
 }
 .header .bottom ul {
   display: flex;
+  margin-bottom: 0px;
 }
 .header .bottom ul a {
   font-family: "Roboto";
@@ -275,6 +277,38 @@ body .wrap {
   font-size: 28px;
   text-align: center;
   margin: 60px 0px;
+}
+.index-main .section3 .section-3-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.index-main .section3 .section-3-div div {
+  margin: 10px 0px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.index-main .section3 .section-3-div div img {
+  max-width: 250px;
+}
+.index-main .section3 .section-3-div div p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  color: #333333;
+  padding: 20px 0px;
+  margin: 0px;
+}
+.index-main .section3 .section-3-div div h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 10px;
+  color: #8e03a4;
+  margin: 0px;
 }
 
 footer {
