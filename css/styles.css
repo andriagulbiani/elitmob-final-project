@@ -288,6 +288,16 @@ footer .footer-wrap {
   height: 95px;
   border-color: rgba(255, 255, 255, 0.1);
 }
+@media (max-width: 900px) {
+  footer .footer-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 145px;
+  }
+}
 footer .footer-image img {
   height: 55px;
 }

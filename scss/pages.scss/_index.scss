@@ -238,6 +238,11 @@ footer {
         padding: 0px 35px;
         height: 95px;
         border-color: rgba(255, 255, 255, .1);
+
+        @media (max-width: 900px) {
+            @include goFlex(column, space-around, center, nowrap);
+            height: 145px;
+        }
     }
 
     .footer-image {
