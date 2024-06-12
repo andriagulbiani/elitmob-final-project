@@ -273,4 +273,26 @@ body .wrap {
   font-size: 28px;
   text-align: center;
   margin: 60px 0px;
+}
+
+footer {
+  background-color: #e5e5e5;
+}
+footer .footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 35px;
+  height: 95px;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+footer .footer-image img {
+  height: 55px;
+}
+footer .footer-location p {
+  color: #929292;
+  font-size: 15px;
+  margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
