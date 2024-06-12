@@ -152,12 +152,55 @@ body {
 .index-main {
 
     .carousel {
-        margin: 40px 0px;
+        margin: 25px 0px;
 
         ol {
           @media (max-width: 900px) {
           display: none;;
           }
+        }
+    }
+
+
+    .section2 {
+        margin: 50px 0px;
+
+        
+        .images {
+            @include goFlex(row, space-around, center);
+
+            div {
+                text-align: center;
+                width: 300px;
+                padding: 50px;
+            }
+
+            img {
+                max-width: 70px;
+            }
+
+            h4 {
+                font-weight: 600;
+                font-size: 15px;
+                color: #777777;
+                margin: 0px;
+            }
+
+            p {
+                color: #777777;
+                font-size: 15px;
+            }
+        }
+
+        .phones-text {
+
+            h1 {
+                color: #2d2a2a;
+                font-weight: 600;
+                font-size: 28px;
+                text-align: center;
+                margin: 60px 0px;
+            }
         }
     }
 }
