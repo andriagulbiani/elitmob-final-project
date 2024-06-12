@@ -113,7 +113,11 @@ body .wrap {
   font-size: 14px;
   line-height: 10px;
   padding: 0px 10px;
-  color: #333333 !important;
+  color: #333333;
+  transition: all 0.25s ease;
+}
+.header .top ul a:hover {
+  color: #8e03a4;
 }
 .header .top ul .main {
   color: #8e03a4 !important;
@@ -144,6 +148,10 @@ body .wrap {
   line-height: 10px;
   color: white;
   padding: 0px 10px;
+  transition: all 0.25s ease;
+}
+.header .bottom ul a:hover {
+  color: lightgray;
 }
 .header .bottom form {
   position: relative;
@@ -167,6 +175,10 @@ body .wrap {
   right: 0;
   top: 0;
   bottom: 0;
+  transition: all 0.25s ease;
+}
+.header .bottom form button:hover {
+  background-color: purple;
 }
 .header .bottom form ::-moz-placeholder {
   padding-left: 12px;
@@ -290,9 +302,14 @@ body .wrap {
   margin: 10px 0px;
   padding: 0px 10px;
   text-align: center;
+  transition: all 0.25s ease;
 }
 .index-main .section3 .section-3-div div img {
   max-width: 250px;
+  transition: all 0.25s ease;
+}
+.index-main .section3 .section-3-div div img:hover {
+  transform: scale(1.05);
 }
 .index-main .section3 .section-3-div div p {
   font-family: "Roboto";
@@ -302,6 +319,10 @@ body .wrap {
   color: #333333;
   padding: 20px 0px;
   margin: 0px;
+  transition: all 0.25s ease;
+}
+.index-main .section3 .section-3-div div p:hover {
+  color: #777777;
 }
 .index-main .section3 .section-3-div div h2 {
   font-family: "Roboto";
@@ -310,6 +331,10 @@ body .wrap {
   line-height: 10px;
   color: #8e03a4;
   margin: 0px;
+  transition: all 0.25s ease;
+}
+.index-main .section3 .section-3-div div h2:hover {
+  transform: scale(1.01);
 }
 
 footer {
