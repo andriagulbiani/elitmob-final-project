@@ -1,0 +1,82 @@
+body {
+    @extend %my-container;
+    background-color: #ffffff;
+  
+   .wrap {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, .08);
+    
+        .header {
+            @include goFlex(column);
+        }
+
+        .top {
+            @include goFlex(row, space-between, center);
+            padding: 0px 15px;
+
+            ul {
+                display: flex;
+
+                a {
+                    @include robotoFont(600, 14px);
+                    padding: 0px 10px;
+                    color: #333333 !important;
+                }
+
+                .main {
+                    color: #8e03a4 !important;
+                }
+            }
+        }
+
+        .bottom {
+            @include goFlex(row, space-between, center);
+            height: 50px;
+            padding: 0px 15px 0px 5px;
+            background-color: #8e03a4;
+
+            ul {
+                display: flex;
+
+                a {
+                    @include robotoFont(700, 14px);
+                    color: white;
+                    padding: 0px 10px;
+                }
+            }
+
+            form {
+                position: relative;
+
+                input {
+                    border: 2px solid rgba(129, 129, 129, .2);
+                    height: 30px;
+                    border-radius: 30px;
+                    width: 290px;
+                }
+
+                button {
+                    position: absolute;
+                    background-color: #8e03a4;
+                    color: #FFF;
+                    border: 2px solid rgba(129, 129, 129, .2);
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    width: 52px;
+                    padding-left: 18px;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                }
+
+                ::placeholder {
+                    padding-left: 12px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+  }
