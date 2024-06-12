@@ -148,3 +148,16 @@ body {
         }
     }
 }
+
+.index-main {
+
+    .carousel {
+        margin-top: 40px 0px;
+
+        ol {
+          @media (max-width: 900px) {
+          display: none;;
+          }
+        }
+    }
+}
