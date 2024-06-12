@@ -94,6 +94,9 @@ body .wrap .top {
   flex-wrap: wrap;
   padding: 0px 15px;
 }
+body .wrap .top .header-img {
+  padding: 0px 15px;
+}
 body .wrap .top ul {
   display: flex;
 }
@@ -115,7 +118,7 @@ body .wrap .bottom {
   align-items: center;
   flex-wrap: wrap;
   height: 50px;
-  padding: 0px 15px 0px 5px;
+  padding: 0px 20px;
   background-color: #8e03a4;
 }
 body .wrap .bottom ul {
