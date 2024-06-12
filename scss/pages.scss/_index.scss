@@ -213,6 +213,7 @@ body {
 
         .section-3-div {
             @include goFlex(row, space-evenly);
+            margin-bottom: 150px;
 
             div {
                 margin: 10px 0px;

@@ -284,6 +284,7 @@ body .wrap {
   justify-content: space-evenly;
   align-items: stretch;
   flex-wrap: wrap;
+  margin-bottom: 150px;
 }
 .index-main .section3 .section-3-div div {
   margin: 10px 0px;
