@@ -79,14 +79,15 @@ body .wrap {
   background-color: white;
   box-shadow: 0 1px 9px rgba(0, 0, 0, 0.08);
 }
-body .wrap .header {
+
+.header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: wrap;
 }
-body .wrap .top {
+.header .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,13 +95,18 @@ body .wrap .top {
   flex-wrap: wrap;
   padding: 0px 15px;
 }
-body .wrap .top .header-img {
+@media (max-width: 900px) {
+  .header .top {
+    display: none;
+  }
+}
+.header .top .header-img {
   padding: 0px 15px;
 }
-body .wrap .top ul {
+.header .top ul {
   display: flex;
 }
-body .wrap .top ul a {
+.header .top ul a {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 14px;
@@ -108,10 +114,10 @@ body .wrap .top ul a {
   padding: 0px 10px;
   color: #333333 !important;
 }
-body .wrap .top ul .main {
+.header .top ul .main {
   color: #8e03a4 !important;
 }
-body .wrap .bottom {
+.header .bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -121,10 +127,15 @@ body .wrap .bottom {
   padding: 0px 20px;
   background-color: #8e03a4;
 }
-body .wrap .bottom ul {
+@media (max-width: 900px) {
+  .header .bottom {
+    display: none;
+  }
+}
+.header .bottom ul {
   display: flex;
 }
-body .wrap .bottom ul a {
+.header .bottom ul a {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -132,16 +143,16 @@ body .wrap .bottom ul a {
   color: white;
   padding: 0px 10px;
 }
-body .wrap .bottom form {
+.header .bottom form {
   position: relative;
 }
-body .wrap .bottom form input {
+.header .bottom form input {
   border: 2px solid rgba(129, 129, 129, 0.2);
   height: 30px;
   border-radius: 30px;
   width: 290px;
 }
-body .wrap .bottom form button {
+.header .bottom form button {
   position: absolute;
   background-color: #8e03a4;
   color: #FFF;
@@ -154,11 +165,68 @@ body .wrap .bottom form button {
   top: 0;
   bottom: 0;
 }
-body .wrap .bottom form ::-moz-placeholder {
+.header .bottom form ::-moz-placeholder {
   padding-left: 12px;
   font-size: 16px;
 }
-body .wrap .bottom form ::placeholder {
+.header .bottom form ::placeholder {
   padding-left: 12px;
   font-size: 16px;
+}
+.header .responsive-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+  border-color: rgba(129, 129, 129, 0.2);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 0px 15px;
+}
+@media (max-width: 900px) {
+  .header .responsive-header {
+    display: flex;
+  }
+}
+.header .responsive-header .burger-menu a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  color: #333333;
+}
+.header .responsive-header .burger-menu .burger-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1px 10px 1px 0px;
+}
+.header .responsive-header .burger-menu .burger {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+.header .responsive-header .burger-menu .menu {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 10px;
+}
+.header .responsive-header .icon img {
+  max-width: 140px;
+  max-height: 60px;
+  padding: 5px 0px;
+}
+.header .responsive-header .search {
+  padding: 0px 10px;
+}
+.header .responsive-header .search .gg-search {
+  color: #333333;
 }/*# sourceMappingURL=styles.css.map */
