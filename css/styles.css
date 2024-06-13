@@ -405,7 +405,9 @@ body .wrap {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin: 40px 0px;
+  padding: 0px 40px;
 }
 .contact-main .left .text h1 {
   font-size: 22px;

@@ -1,11 +1,12 @@
 .contact-main {
 
     section {
-        @include goFlex(row, space-between, center);    
+        @include goFlex(row, space-between, center, nowrap); 
+        margin: 40px 0px;   
+        padding: 0px 40px;
     }
 
     .left {
-
 
         .text {
 
@@ -38,5 +39,9 @@
                 margin: 5px;
             }
         }
+    }
+
+    .right {
+        max-width: ;
     }
 }
