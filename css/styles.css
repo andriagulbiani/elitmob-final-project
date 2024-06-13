@@ -337,10 +337,11 @@ body .wrap {
   transform: scale(1.01);
 }
 
-footer {
+.footer {
+  width: 100%;
   background-color: #e5e5e5;
 }
-footer .footer-wrap {
+.footer .footer-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -351,7 +352,7 @@ footer .footer-wrap {
   border-color: rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 900px) {
-  footer .footer-wrap {
+  .footer .footer-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -360,10 +361,10 @@ footer .footer-wrap {
     height: 145px;
   }
 }
-footer .footer-image img {
+.footer .footer-image img {
   height: 55px;
 }
-footer .footer-location p {
+.footer .footer-location p {
   color: #929292;
   font-size: 15px;
   margin-top: 10px;
