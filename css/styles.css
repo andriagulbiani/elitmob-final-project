@@ -388,4 +388,14 @@ body .wrap {
   font-size: 25px;
   margin-top: 10px;
   color: #333333;
+}
+
+.about-us-main article {
+  padding: 0px 15px;
+  margin: 40px 0px;
+}
+.about-us-main article p {
+  color: #777777;
+  font-size: 16px;
+  line-height: 25px;
 }/*# sourceMappingURL=styles.css.map */
