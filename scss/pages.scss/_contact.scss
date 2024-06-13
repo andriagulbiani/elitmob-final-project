@@ -1,0 +1,42 @@
+.contact-main {
+
+    section {
+        @include goFlex(row, space-between, center);    
+    }
+
+    .left {
+
+
+        .text {
+
+            h1 {
+                font-size: 22px;
+                font-weight: 600;
+                color: #2d2a2a;
+            }
+
+            li {
+                @include robotoFont(400, 14px, 25px);
+                color: #777777;
+            }
+            
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .icons {
+            @include goFlex(row, flex-start, center);
+
+
+            a {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #37AEE2;
+                color: #ffffff !important;
+                margin: 5px;
+            }
+        }
+    }
+}

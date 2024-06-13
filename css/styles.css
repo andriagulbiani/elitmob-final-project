@@ -398,4 +398,42 @@ body .wrap {
   color: #777777;
   font-size: 16px;
   line-height: 25px;
+}
+
+.contact-main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-main .left .text h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d2a2a;
+}
+.contact-main .left .text li {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #777777;
+}
+.contact-main .left .text span {
+  font-weight: 600;
+}
+.contact-main .left .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-main .left .icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #37AEE2;
+  color: #ffffff !important;
+  margin: 5px;
 }/*# sourceMappingURL=styles.css.map */
