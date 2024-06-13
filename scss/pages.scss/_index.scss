@@ -275,31 +275,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #e5e5e5;
 
@@ -336,8 +311,8 @@ footer {
     position: fixed;
     right: 12px;
     bottom: 12px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .9);
     box-shadow: 0 0 5px rgba(0, 0, 0, .17);
@@ -345,4 +320,10 @@ footer {
     text-align: center;
     font-size: 0;
     transition: all .25s ease;
+
+    i {
+        font-size: 25px;
+        margin-top: 10px;
+        color: #333333;
+    }
 }
