@@ -254,7 +254,7 @@ body {
                     color: #333333;
                     padding: 20px 0px;
                     margin: 0px;
-                    transition: all .25s ease;
+                    transition: all .25s linear;
                 }
 
                 p:hover {
@@ -265,12 +265,12 @@ body {
                     @include robotoFont(700, 20px);
                     color: #8e03a4;
                     margin: 0px;
-                    transition: all .25s ease;
+                    transition: all .25s linear;
 
                 }
 
                 h2:hover {
-                    transform: scale(1.01);
+                    transform: scale(1.02);
                 }
             }
         }
@@ -322,11 +322,19 @@ body {
     color: #333;
     text-align: center;
     font-size: 0;
-    transition: all .25s ease;
+    transition: all 1s ease;
 
     i {
         font-size: 25px;
         margin-top: 10px;
         color: #333333;
+        transition: all 0.25s ease;
+    }
+}
+
+.scroll-on-top:hover {
+
+    i{
+        transform: scale(1.15);
     }
 }
