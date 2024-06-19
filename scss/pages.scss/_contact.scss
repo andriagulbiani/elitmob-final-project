@@ -32,6 +32,14 @@
             span {
                 font-weight: 600;
             }
+
+            a {
+                color: #777777;
+                transition: all 0.25s ease;
+            }
+            a:hover {
+                color: #9d03a4;
+            }
         }
 
         .icons {
@@ -40,12 +48,57 @@
 
 
             a {
+                @include goFlex(row, center, center);
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
                 background-color: #37AEE2;
                 color: #ffffff !important;
                 margin: 5px;
+            }
+
+            .facebook {
+                background-color: #365493;
+                transition: all 0.25s ease;
+            }
+            .facebook:hover {
+                background-color: #2e487e;
+            }
+
+
+            .twitter {
+                background-color: #3CF;
+                transition: all 0.25s ease;
+            }
+            .twitter:hover {
+                background-color: #2cafdb;
+            }
+
+
+            .pinterest {
+                background-color: #CB2027;
+                transition: all 0.25s ease;
+            }
+            .pinterest:hover {
+                background-color: #ae1b21;
+            }
+
+
+            .linkedin {
+                background-color: #0274B3;
+                transition: all 0.25s ease;
+            }
+            .linkedin:hover {
+                background-color: #02649a;
+            }
+
+
+            .telegram {
+                background-color: #37AEE2;
+                transition: all 0.25s ease;
+            }
+            .telegram:hover {
+                background-color: #2f95c2;
             }
         }
     }

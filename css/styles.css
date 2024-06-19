@@ -440,6 +440,13 @@ body .wrap {
 .contact-main .left .text span {
   font-weight: 600;
 }
+.contact-main .left .text a {
+  color: #777777;
+  transition: all 0.25s ease;
+}
+.contact-main .left .text a:hover {
+  color: #9d03a4;
+}
 .contact-main .left .icons {
   display: flex;
   flex-direction: row;
@@ -449,12 +456,52 @@ body .wrap {
   padding: 20px 0px;
 }
 .contact-main .left .icons a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #37AEE2;
   color: #ffffff !important;
   margin: 5px;
+}
+.contact-main .left .icons .facebook {
+  background-color: #365493;
+  transition: all 0.25s ease;
+}
+.contact-main .left .icons .facebook:hover {
+  background-color: #2e487e;
+}
+.contact-main .left .icons .twitter {
+  background-color: #3CF;
+  transition: all 0.25s ease;
+}
+.contact-main .left .icons .twitter:hover {
+  background-color: #2cafdb;
+}
+.contact-main .left .icons .pinterest {
+  background-color: #CB2027;
+  transition: all 0.25s ease;
+}
+.contact-main .left .icons .pinterest:hover {
+  background-color: #ae1b21;
+}
+.contact-main .left .icons .linkedin {
+  background-color: #0274B3;
+  transition: all 0.25s ease;
+}
+.contact-main .left .icons .linkedin:hover {
+  background-color: #02649a;
+}
+.contact-main .left .icons .telegram {
+  background-color: #37AEE2;
+  transition: all 0.25s ease;
+}
+.contact-main .left .icons .telegram:hover {
+  background-color: #2f95c2;
 }
 .contact-main .right {
   width: 100%;
