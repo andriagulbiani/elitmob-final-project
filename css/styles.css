@@ -111,7 +111,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 14px;
-  line-height: 10px;
+  line-height: auto;
   padding: 0px 10px;
   color: #333333;
   transition: all 0.25s ease;
@@ -145,7 +145,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: 10px;
+  line-height: auto;
   color: white;
   padding: 0px 10px;
   transition: all 0.25s ease;
@@ -232,7 +232,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: 10px;
+  line-height: auto;
 }
 .header .responsive-header .icon img {
   max-width: 140px;
@@ -315,7 +315,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 10px;
+  line-height: auto;
   color: #333333;
   padding: 20px 0px;
   margin: 0px;
@@ -328,7 +328,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  line-height: 10px;
+  line-height: auto;
   color: #8e03a4;
   margin: 0px;
   transition: all 0.25s linear;
@@ -516,4 +516,63 @@ body .wrap {
   width: 100%;
 }
 
-@impo;/*# sourceMappingURL=styles.css.map */
+.news-section-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.news-section-wrapper div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 33.333333%;
+  padding: 10px;
+  outline: dotted 1px gray;
+}
+.news-section-wrapper div img {
+  max-width: 100%;
+}
+.news-section-wrapper div h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: auto;
+  text-align: center;
+  color: #2d2a2a;
+}
+.news-section-wrapper div p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: auto;
+  color: #777777;
+  text-align: center;
+}
+.news-section-wrapper div .continiue {
+  font-weight: 600;
+}
+.news-section-wrapper .ios17 {
+  height: 535px;
+}
+.news-section-wrapper .new-device {
+  height: 538px;
+}
+.news-section-wrapper .samsung-ring {
+  height: 600px;
+}
+.news-section-wrapper .new-audi {
+  height: 530px;
+}
+.news-section-wrapper .apple-store {
+  height: 610px;
+}
+.news-section-wrapper .apple-2022 {
+  height: 540px;
+}
+.news-section-wrapper .s22-sales {
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */

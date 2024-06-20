@@ -1,0 +1,77 @@
+.news-main {
+
+    .news-section {
+
+
+    }
+}
+
+
+.news-section-wrapper {
+    @include goFlex(row, center, flex-start);
+
+    div {
+        @include goFlex(column, space-between, center);
+        max-width: 33.333333%;
+        padding: 10px;
+        outline: dotted 1px gray;
+
+
+        img {
+            max-width: 100%;
+    
+    
+        }
+    
+        h1 {
+            @include robotoFont(700, 22px,);
+            text-align: center;
+            color: #2d2a2a;
+        }
+    
+    
+        p {
+            @include robotoFont(400, 14px);
+            color: #777777;
+            text-align: center;
+    
+    
+    
+        }
+    
+        .continiue {
+            font-weight: 600;
+        }
+    }
+
+    .ios17 {
+        height: 535px;
+    }
+
+    .new-device {
+        height: 538px;
+    }
+
+    .samsung-ring {
+        height: 600px;
+    }
+
+    .new-audi {
+        height: 530px;
+    }
+
+    .apple-store {
+        height: 610px;
+    }
+
+    .apple-2022 {
+        height: 540px;
+    }
+
+    .s22-sales {
+        height: 300px;
+    }
+
+
+
+}
