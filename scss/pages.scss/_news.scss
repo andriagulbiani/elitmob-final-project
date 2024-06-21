@@ -8,19 +8,19 @@
 
 
 .news-section-wrapper {
-    @include goFlex(row, center, flex-start);
+    @include goFlex(row, flex-start, flex-start);
 
     div {
         @include goFlex(column, space-between, center);
-        max-width: 33.333333%;
+        max-width: 30.333333%;
         padding: 10px;
-        outline: dotted 1px gray;
-
+        margin: 10px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .12);
+        transition: box-shadow .35s ease;
+       
 
         img {
-            max-width: 100%;
-    
-    
+            max-width: 100%;;
         }
     
         h1 {
@@ -69,7 +69,7 @@
     }
 
     .s22-sales {
-        height: 300px;
+        height: 500px;
     }
 
 
