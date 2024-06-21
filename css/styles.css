@@ -299,13 +299,13 @@ body .wrap {
   margin-bottom: 150px;
 }
 .index-main .section3 .section-3-div div {
-  margin: 10px 0px;
-  padding: 0px 10px;
+  margin: 30px 0px;
   text-align: center;
   transition: all 0.25s ease;
+  max-width: 255px;
 }
 .index-main .section3 .section-3-div div img {
-  max-width: 250px;
+  max-width: 255px;
   transition: all 0.25s ease;
 }
 .index-main .section3 .section-3-div div img:hover {
@@ -315,7 +315,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: auto;
+  line-height: 20px;
   color: #333333;
   padding: 20px 0px;
   margin: 0px;
@@ -516,63 +516,49 @@ body .wrap {
   width: 100%;
 }
 
-.news-section-wrapper {
+.wrapper .phones .phones-div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: stretch;
   flex-wrap: wrap;
+  margin-bottom: 150px;
 }
-.news-section-wrapper div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 33.333333%;
-  padding: 10px;
-  outline: dotted 1px gray;
-}
-.news-section-wrapper div img {
-  max-width: 100%;
-}
-.news-section-wrapper div h1 {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 22px;
-  line-height: auto;
+.wrapper .phones .phones-div div {
+  margin: 30px 0px;
   text-align: center;
-  color: #2d2a2a;
+  transition: all 0.25s ease;
+  max-width: 255px;
 }
-.news-section-wrapper div p {
+.wrapper .phones .phones-div div img {
+  max-width: 255px;
+  transition: all 0.25s ease;
+}
+.wrapper .phones .phones-div div img:hover {
+  transform: scale(1.05);
+}
+.wrapper .phones .phones-div div p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: auto;
+  line-height: 20px;
+  color: #333333;
+  padding: 20px 0px;
+  margin: 0px;
+  transition: all 0.25s linear;
+}
+.wrapper .phones .phones-div div p:hover {
   color: #777777;
-  text-align: center;
 }
-.news-section-wrapper div .continiue {
-  font-weight: 600;
+.wrapper .phones .phones-div div h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 10px;
+  color: #8e03a4;
+  margin: 0px;
+  transition: all 0.25s linear;
 }
-.news-section-wrapper .ios17 {
-  height: 535px;
-}
-.news-section-wrapper .new-device {
-  height: 538px;
-}
-.news-section-wrapper .samsung-ring {
-  height: 600px;
-}
-.news-section-wrapper .new-audi {
-  height: 530px;
-}
-.news-section-wrapper .apple-store {
-  height: 610px;
-}
-.news-section-wrapper .apple-2022 {
-  height: 540px;
-}
-.news-section-wrapper .s22-sales {
-  height: 300px;
+.wrapper .phones .phones-div div h2:hover {
+  transform: scale(1.02);
 }/*# sourceMappingURL=styles.css.map */
