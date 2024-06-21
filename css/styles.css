@@ -514,4 +514,51 @@ body .wrap {
 }
 .contact-main .right .iframe {
   width: 100%;
+}
+
+.wrapper .phones .phones-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+.wrapper .phones .phones-div div {
+  margin: 30px 0px;
+  text-align: center;
+  transition: all 0.25s ease;
+  max-width: 255px;
+}
+.wrapper .phones .phones-div div img {
+  max-width: 255px;
+  transition: all 0.25s ease;
+}
+.wrapper .phones .phones-div div img:hover {
+  transform: scale(1.05);
+}
+.wrapper .phones .phones-div div p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  padding: 20px 0px;
+  margin: 0px;
+  transition: all 0.25s linear;
+}
+.wrapper .phones .phones-div div p:hover {
+  color: #777777;
+}
+.wrapper .phones .phones-div div h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 10px;
+  color: #8e03a4;
+  margin: 0px;
+  transition: all 0.25s linear;
+}
+.wrapper .phones .phones-div div h2:hover {
+  transform: scale(1.02);
 }/*# sourceMappingURL=styles.css.map */
