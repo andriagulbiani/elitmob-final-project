@@ -519,9 +519,12 @@ body .wrap {
 .news-section-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+.news-section-wrapper div:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
 }
 .news-section-wrapper div {
   display: flex;
@@ -537,6 +540,10 @@ body .wrap {
 }
 .news-section-wrapper div img {
   max-width: 100%;
+  transition: all 0.25s ease;
+}
+.news-section-wrapper div img:hover {
+  transform: scale(1.01);
 }
 .news-section-wrapper div h1 {
   font-family: "Roboto";
@@ -558,25 +565,25 @@ body .wrap {
   font-weight: 600;
 }
 .news-section-wrapper .ios17 {
-  height: 535px;
+  height: 530px;
 }
 .news-section-wrapper .new-device {
-  height: 538px;
+  height: 600px;
 }
 .news-section-wrapper .samsung-ring {
-  height: 600px;
+  height: 650px;
 }
 .news-section-wrapper .new-audi {
   height: 530px;
 }
 .news-section-wrapper .apple-store {
-  height: 610px;
+  height: 530px;
 }
 .news-section-wrapper .apple-2022 {
-  height: 540px;
+  height: 530px;
 }
 .news-section-wrapper .s22-sales {
-  height: 500px;
+  height: 530px;
 }
 
 .wrapper .phones .phones-div {

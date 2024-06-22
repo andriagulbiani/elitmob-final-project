@@ -8,7 +8,15 @@
 
 
 .news-section-wrapper {
-    @include goFlex(row, flex-start, flex-start);
+    @include goFlex(row, space-evenly, flex-start);
+
+
+    div:hover {
+
+        box-shadow: 0 0 4px rgba(0, 0, 0, .45);
+
+    }
+
 
     div {
         @include goFlex(column, space-between, center);
@@ -21,6 +29,11 @@
 
         img {
             max-width: 100%;;
+            transition: all 0.25s ease;
+        }
+
+        img:hover {
+            transform: scale(1.01)
         }
     
         h1 {
@@ -45,15 +58,15 @@
     }
 
     .ios17 {
-        height: 535px;
+        height: 530px;
     }
 
     .new-device {
-        height: 538px;
+        height: 600px;
     }
 
     .samsung-ring {
-        height: 600px;
+        height: 650px;
     }
 
     .new-audi {
@@ -61,15 +74,15 @@
     }
 
     .apple-store {
-        height: 610px;
+        height: 530px;
     }
 
     .apple-2022 {
-        height: 540px;
+        height: 530px;
     }
 
     .s22-sales {
-        height: 500px;
+        height: 530px;
     }
 
 
