@@ -9,11 +9,12 @@
 
 .news-section-wrapper {
     @include goFlex(row, space-evenly, flex-start);
+    margin-top: 50px;
 
 
     div:hover {
 
-        box-shadow: 0 0 4px rgba(0, 0, 0, .45);
+        box-shadow: 0 0 15px rgba(0, 0, 0, .30);
 
     }
 
@@ -28,7 +29,7 @@
        
 
         img {
-            max-width: 100%;;
+            max-width: 100%;
             transition: all 0.25s ease;
         }
 

@@ -1,0 +1,23 @@
+.audi-5-g-main {
+
+    section {
+
+        .title {
+            text-align: center;
+            @include goFlex(column, space-evenly, center);
+
+            p {
+                @include robotoFont(400, 14px);
+                padding: 5px;
+                margin: 25px;
+                background-color: #8e03a4;
+                color: white;
+            }
+
+            h1 {
+
+
+            }
+        }
+    }
+}
