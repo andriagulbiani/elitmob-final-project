@@ -586,6 +586,12 @@ body .wrap {
   height: 530px;
 }
 
+.wrapper .title h1 {
+  font-weight: 600;
+  font-size: 34px;
+  margin: 40px 30px;
+  color: #2d2a2a;
+}
 .wrapper .phones .phones-div {
   display: flex;
   flex-direction: row;
@@ -598,10 +604,10 @@ body .wrap {
   margin: 30px 0px;
   text-align: center;
   transition: all 0.25s ease;
-  max-width: 255px;
+  max-width: 360px;
 }
 .wrapper .phones .phones-div div img {
-  max-width: 255px;
+  max-width: 360px;
   transition: all 0.25s ease;
 }
 .wrapper .phones .phones-div div img:hover {
@@ -631,4 +637,48 @@ body .wrap {
 }
 .wrapper .phones .phones-div div h2:hover {
   transform: scale(1.02);
+}
+
+.phones-main .section1 .phones-information .text h1 {
+  font-weight: 600;
+  font-size: 34px;
+  color: #2d2a2a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.phones-main .section1 .phones-information .text .storage {
+  font-weight: 400;
+  font-size: 13px;
+  color: #222222;
+}
+.phones-main .section1 .phones-information .text .storage span {
+  color: green;
+}
+.phones-main .section1 .phones-information .text .condition-p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #222222;
+}
+.phones-main .section1 .phones-information .text .condition-p span {
+  font-weight: 600;
+}
+.phones-main .section1 .phones-information .text .with-phone {
+  font-weight: 600;
+  font-size: 16px;
+  color: #777777;
+}
+.phones-main .section1 .phones-information .text .usb {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777777;
+}
+.phones-main .section1 .phones-information .text .screen-protector {
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+}
+.phones-main .section1 .phones-information .text .delivery {
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
 }/*# sourceMappingURL=styles.css.map */

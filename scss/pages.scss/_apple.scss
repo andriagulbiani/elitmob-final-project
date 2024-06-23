@@ -1,5 +1,19 @@
 .wrapper {
 
+    .title {
+
+        h1 {
+            font-weight: 600;
+            font-size: 34px;
+            margin: 40px 30px;
+            color: #2d2a2a;
+        }
+    }
+
+    .sorter {
+        
+    }
+
     .phones {
         
         .phones-div {
@@ -12,11 +26,11 @@
                 margin: 30px 0px;
                 text-align: center;
                 transition: all .25s ease;
-                max-width: 255px;
+                max-width: 360px;
         
         
                 img {
-                    max-width: 255px;
+                    max-width: 360px;
                     transition: all .25s ease;
                 }
         
