@@ -1,22 +1,151 @@
 .audi-5-g-main {
 
+
     section {
+        width: 100%;
 
         .title {
             text-align: center;
             @include goFlex(column, space-evenly, center);
 
             p {
-                @include robotoFont(400, 14px);
-                padding: 5px;
+                @include robotoFont(600, 14px);
+                letter-spacing: 0.3px;
+                padding: 6px 12px;
                 margin: 25px;
                 background-color: #8e03a4;
                 color: white;
+                transition: all .25s ease;
+            }
+
+            p:hover {
+                color: #e8cded;
             }
 
             h1 {
+                @include robotoFont(600, 32px);
+                color: #2d2a2a;
+
+                @media (max-width: 1024px) {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .image {
+            @include goFlex(column, center, center);
+            margin-top: 50px;
+
+            .wrap {
+                 position: relative;
+                @include goFlex(column, center, center);
+                max-width: 95%;
+            }
+
+            .date {
+                position: absolute;
+                background-color: white;
+                padding: 10px 15px;
+                top: 15px;
+                left: 15px;
+                text-align: center;
+                box-shadow: 0 0 9px rgba(0, 0, 0, .1);
+
+                p {
+                    @include robotoFont(400, 24px);
+                    color: #333333;
+                }
+
+                h4 {
+                    @include robotoFont(700, 14px);
+                    color: #333333;
+
+                }
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .description {
+            @include goFlex(column, space-between, center, wrap);
+            margin: 40px 0px 10px;
+
+            p {
+                @include robotoFont(600, 16px, 25px);
+                color: #777777;
+                text-align: center;
+                max-width: 1090px;
+                padding: 0px 0px 35px;
+            }
+        }
+
+        .icons {
+            @include goFlex(row, center, center);
+            padding: 0px 0px 25px;
 
 
+            a {
+                @include goFlex(row, center, center);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #37AEE2;
+                color: #ffffff !important;
+                margin: 5px;
+            }
+
+            .facebook {
+                background-color: #365493;
+                transition: all 0.25s ease;
+            }
+            .facebook:hover {
+                background-color: #2e487e;
+            }
+
+
+            .twitter {
+                background-color: #3CF;
+                transition: all 0.25s ease;
+            }
+            .twitter:hover {
+                background-color: #2cafdb;
+            }
+
+
+            .pinterest {
+                background-color: #CB2027;
+                transition: all 0.25s ease;
+            }
+            .pinterest:hover {
+                background-color: #ae1b21;
+            }
+
+
+            .linkedin {
+                background-color: #0274B3;
+                transition: all 0.25s ease;
+            }
+            .linkedin:hover {
+                background-color: #02649a;
+            }
+
+
+            .telegram {
+                background-color: #37AEE2;
+                transition: all 0.25s ease;
+            }
+            .telegram:hover {
+                background-color: #2f95c2;
             }
         }
     }

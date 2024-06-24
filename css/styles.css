@@ -684,6 +684,9 @@ body .wrap {
   color: #000000;
 }
 
+.audi-5-g-main section {
+  width: 100%;
+}
 .audi-5-g-main section .title {
   text-align: center;
   display: flex;
@@ -694,11 +697,155 @@ body .wrap {
 }
 .audi-5-g-main section .title p {
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   line-height: auto;
-  padding: 5px;
+  letter-spacing: 0.3px;
+  padding: 6px 12px;
   margin: 25px;
   background-color: #8e03a4;
   color: white;
+  transition: all 0.25s ease;
+}
+.audi-5-g-main section .title p:hover {
+  color: #e8cded;
+}
+.audi-5-g-main section .title h1 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: auto;
+  color: #2d2a2a;
+}
+@media (max-width: 1024px) {
+  .audi-5-g-main section .title h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .audi-5-g-main section .title h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .audi-5-g-main section .title h1 {
+    font-size: 20px;
+  }
+}
+.audi-5-g-main section .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.audi-5-g-main section .image .wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 95%;
+}
+.audi-5-g-main section .image .date {
+  position: absolute;
+  background-color: white;
+  padding: 10px 15px;
+  top: 15px;
+  left: 15px;
+  text-align: center;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+}
+.audi-5-g-main section .image .date p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: auto;
+  color: #333333;
+}
+.audi-5-g-main section .image .date h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: auto;
+  color: #333333;
+}
+.audi-5-g-main section .image img {
+  max-width: 100%;
+}
+.audi-5-g-main section .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0px 10px;
+}
+.audi-5-g-main section .description p {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #777777;
+  text-align: center;
+  max-width: 1090px;
+  padding: 0px 0px 35px;
+}
+.audi-5-g-main section .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 0px 25px;
+}
+.audi-5-g-main section .icons a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #37AEE2;
+  color: #ffffff !important;
+  margin: 5px;
+}
+.audi-5-g-main section .icons .facebook {
+  background-color: #365493;
+  transition: all 0.25s ease;
+}
+.audi-5-g-main section .icons .facebook:hover {
+  background-color: #2e487e;
+}
+.audi-5-g-main section .icons .twitter {
+  background-color: #3CF;
+  transition: all 0.25s ease;
+}
+.audi-5-g-main section .icons .twitter:hover {
+  background-color: #2cafdb;
+}
+.audi-5-g-main section .icons .pinterest {
+  background-color: #CB2027;
+  transition: all 0.25s ease;
+}
+.audi-5-g-main section .icons .pinterest:hover {
+  background-color: #ae1b21;
+}
+.audi-5-g-main section .icons .linkedin {
+  background-color: #0274B3;
+  transition: all 0.25s ease;
+}
+.audi-5-g-main section .icons .linkedin:hover {
+  background-color: #02649a;
+}
+.audi-5-g-main section .icons .telegram {
+  background-color: #37AEE2;
+  transition: all 0.25s ease;
+}
+.audi-5-g-main section .icons .telegram:hover {
+  background-color: #2f95c2;
 }/*# sourceMappingURL=styles.css.map */
