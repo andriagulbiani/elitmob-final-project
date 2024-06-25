@@ -1,30 +1,24 @@
-.news-main {
-    height: 1700px;
-}
+
 
 
 .news-section-wrapper {
-    @include goFlex(row, center, center);
-    margin: 35px;
-    position: relative;
-    width: 1200px;
-    
+    @include goFlex(row-reverse, space-evenly, flex-start);
+    width: 100%;
+    margin-top: 40px;    
+
+
+
+
     .section-div:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, .30);
     }
 
-    @media (max-width: 1200px) {
-        
-    }
-
-
     .section-div {
-        @include goFlex(column, space-between, center);
-        max-width: 30%;
+        // @include goFlex(column, space-between, center, nowrap);
+        max-width: 370px;
         box-shadow: 0 0 4px rgba(0, 0, 0, .12);
         transition: box-shadow .35s ease;
-        position: absolute; 
-    
+
         img {
             max-width: 100%;
             transition: all 0.25s ease;
@@ -33,6 +27,8 @@
         img:hover {
             transform: scale(1.01)
         }
+
+
     }
 
     .text-wrap {
@@ -76,38 +72,28 @@
     }
 
     .ios17 {
-        left: 0px;
-        top: 0px;
+        margin: 0px 0px -20px;
     }
 
     .new-device {
-        left: 383px;
-        top: 0px;
-    }
-
-    .samsung-ring {
-        left: 766px;
-        top: 0px;
+        margin: 0px 0px 20px;
     }
 
     .new-audi {
-        left: 0px;
-        top: 526px;
+        margin: -45px 0px 0px;
     }
 
-    .apple-store {
-        left: 383px;
-        top: 566px;
+    .samsung-ring {
+        margin: 0px 0px -20px;
     }
 
     .apple-2022 {
-        left: 766px;
-        top: 469px;
+        margin: -70px 0px;
     }
 
     .s22-sales {
-        left: 766px;
-        top: 1011px;
+        margin: 25px 0px;
+        align-self: left;
     }
 
 
