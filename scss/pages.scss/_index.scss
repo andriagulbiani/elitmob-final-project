@@ -150,6 +150,9 @@ body {
                 border-radius: 5px;
             }
 
+            .hamburger.is-active:after {
+                opacity: 50%;
+            }
 
             .menu {
                 @include robotoFont(700, 14px);

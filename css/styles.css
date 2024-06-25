@@ -237,6 +237,9 @@ body .wrap {
   background-color: #333333;
   border-radius: 5px;
 }
+.header .responsive-header .burger-menu .hamburger.is-active:after {
+  opacity: 50%;
+}
 .header .responsive-header .burger-menu .menu {
   font-family: "Roboto";
   font-weight: 700;
