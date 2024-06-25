@@ -277,6 +277,11 @@ body .wrap {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 1200px) {
+  .index-main .section2 .images {
+    display: none;
+  }
+}
 .index-main .section2 .images div {
   text-align: center;
   width: 300px;
