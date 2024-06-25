@@ -1,33 +1,30 @@
 .news-main {
-
-    .news-section {
-
-
-    }
+    height: 1700px;
 }
 
 
 .news-section-wrapper {
-    @include goFlex(row, space-evenly, flex-start);
-    margin-top: 50px;
-
-
-    div:hover {
-
+    @include goFlex(row, center, center);
+    margin: 35px;
+    position: relative;
+    width: 1200px;
+    
+    .section-div:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, .30);
+    }
 
+    @media (max-width: 1200px) {
+        
     }
 
 
-    div {
+    .section-div {
         @include goFlex(column, space-between, center);
-        max-width: 30.333333%;
-        padding: 10px;
-        margin: 10px;
+        max-width: 30%;
         box-shadow: 0 0 4px rgba(0, 0, 0, .12);
         transition: box-shadow .35s ease;
-       
-
+        position: absolute; 
+    
         img {
             max-width: 100%;
             transition: all 0.25s ease;
@@ -36,54 +33,81 @@
         img:hover {
             transform: scale(1.01)
         }
+    }
+
+    .text-wrap {
+        @include goFlex(column, space-between, center);
+        padding: 20px 40px 0px;
     
         h1 {
-            @include robotoFont(700, 22px,);
+            @include robotoFont(700, 24px);
             text-align: center;
             color: #2d2a2a;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        h1:hover {
+            color: purple;
+        }
+
+        i {
+            padding: 15px 0px;
         }
     
-    
         p {
-            @include robotoFont(400, 14px);
+            @include robotoFont(400, 15px, 20px);
             color: #777777;
             text-align: center;
-    
-    
-    
+            letter-spacing: 1px
         }
     
         .continiue {
             font-weight: 600;
+            padding: 15px 0px;
+            transition: all 0.5s ease;
         }
+
+        .continiue:hover {
+            color: purple;
+        }
+
+
     }
 
     .ios17 {
-        height: 530px;
+        left: 0px;
+        top: 0px;
     }
 
     .new-device {
-        height: 600px;
+        left: 383px;
+        top: 0px;
     }
 
     .samsung-ring {
-        height: 650px;
+        left: 766px;
+        top: 0px;
     }
 
     .new-audi {
-        height: 530px;
+        left: 0px;
+        top: 526px;
     }
 
     .apple-store {
-        height: 530px;
+        left: 383px;
+        top: 566px;
     }
 
     .apple-2022 {
-        height: 530px;
+        left: 766px;
+        top: 469px;
     }
 
     .s22-sales {
-        height: 530px;
+        left: 766px;
+        top: 1011px;
     }
 
 

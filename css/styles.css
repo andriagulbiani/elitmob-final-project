@@ -111,7 +111,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 14px;
-  line-height: auto;
+  line-height: 1;
   padding: 0px 10px;
   color: #333333;
   transition: all 0.25s ease;
@@ -145,7 +145,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: auto;
+  line-height: 1;
   color: white;
   padding: 0px 10px;
   transition: all 0.25s ease;
@@ -232,7 +232,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: auto;
+  line-height: 1;
 }
 .header .responsive-header .icon img {
   max-width: 140px;
@@ -328,7 +328,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  line-height: auto;
+  line-height: 1;
   color: #8e03a4;
   margin: 0px;
   transition: all 0.25s linear;
@@ -516,75 +516,109 @@ body .wrap {
   width: 100%;
 }
 
+.news-main {
+  height: 1700px;
+}
+
 .news-section-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin: 35px;
+  position: relative;
+  width: 1200px;
 }
-.news-section-wrapper div:hover {
+.news-section-wrapper .section-div:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.news-section-wrapper div {
+.news-section-wrapper .section-div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 30.333333%;
-  padding: 10px;
-  margin: 10px;
+  max-width: 30%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
   transition: box-shadow 0.35s ease;
+  position: absolute;
 }
-.news-section-wrapper div img {
+.news-section-wrapper .section-div img {
   max-width: 100%;
   transition: all 0.25s ease;
 }
-.news-section-wrapper div img:hover {
+.news-section-wrapper .section-div img:hover {
   transform: scale(1.01);
 }
-.news-section-wrapper div h1 {
+.news-section-wrapper .text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 40px 0px;
+}
+.news-section-wrapper .text-wrap h1 {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 22px;
-  line-height: auto;
+  font-size: 24px;
+  line-height: 1;
   text-align: center;
   color: #2d2a2a;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
-.news-section-wrapper div p {
+.news-section-wrapper .text-wrap h1:hover {
+  color: purple;
+}
+.news-section-wrapper .text-wrap i {
+  padding: 15px 0px;
+}
+.news-section-wrapper .text-wrap p {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: auto;
+  font-size: 15px;
+  line-height: 20px;
   color: #777777;
   text-align: center;
+  letter-spacing: 1px;
 }
-.news-section-wrapper div .continiue {
+.news-section-wrapper .text-wrap .continiue {
   font-weight: 600;
+  padding: 15px 0px;
+  transition: all 0.5s ease;
+}
+.news-section-wrapper .text-wrap .continiue:hover {
+  color: purple;
 }
 .news-section-wrapper .ios17 {
-  height: 530px;
+  left: 0px;
+  top: 0px;
 }
 .news-section-wrapper .new-device {
-  height: 600px;
+  left: 383px;
+  top: 0px;
 }
 .news-section-wrapper .samsung-ring {
-  height: 650px;
+  left: 766px;
+  top: 0px;
 }
 .news-section-wrapper .new-audi {
-  height: 530px;
+  left: 0px;
+  top: 526px;
 }
 .news-section-wrapper .apple-store {
-  height: 530px;
+  left: 383px;
+  top: 566px;
 }
 .news-section-wrapper .apple-2022 {
-  height: 530px;
+  left: 766px;
+  top: 469px;
 }
 .news-section-wrapper .s22-sales {
-  height: 530px;
+  left: 766px;
+  top: 1011px;
 }
 
 .wrapper .title h1 {
@@ -631,7 +665,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  line-height: auto;
+  line-height: 1;
   color: #8e03a4;
   margin: 0px;
   transition: all 0.25s linear;
@@ -699,7 +733,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 14px;
-  line-height: auto;
+  line-height: 1;
   letter-spacing: 0.3px;
   padding: 6px 12px;
   margin: 25px;
@@ -714,7 +748,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 32px;
-  line-height: auto;
+  line-height: 1;
   color: #2d2a2a;
 }
 @media (max-width: 1024px) {
@@ -762,14 +796,14 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 24px;
-  line-height: auto;
+  line-height: 1;
   color: #333333;
 }
 .audi-5-g-main section .image .date h4 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
-  line-height: auto;
+  line-height: 1;
   color: #333333;
 }
 .audi-5-g-main section .image img {

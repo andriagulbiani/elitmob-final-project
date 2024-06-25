@@ -6,7 +6,7 @@
     flex-wrap: $wrap;
 }
 
-@mixin robotoFont($weight: 400, $size: 12px, $height: auto) {
+@mixin robotoFont($weight: 400, $size: 12px, $height: 1) {
     font-family: "Roboto";
     font-weight: $weight;
     font-size: $size;
