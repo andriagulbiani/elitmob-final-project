@@ -582,25 +582,43 @@ body .wrap {
   color: purple;
 }
 .news-section-wrapper .ios17 {
-  margin: 0px 0px -20px;
+  margin: 0px 5px -20px;
 }
 .news-section-wrapper .new-device {
-  margin: 0px 0px 20px;
+  margin: 0px 5px 20px;
 }
 .news-section-wrapper .new-audi {
-  margin: -45px 0px 0px;
+  margin: -45px 5px 0px;
 }
 .news-section-wrapper .samsung-ring {
-  margin: 0px 0px -20px;
+  margin: 0px 5px -20px;
 }
 .news-section-wrapper .apple-2022 {
-  margin: -70px 0px;
+  margin: -70px 5px;
 }
 .news-section-wrapper .s22-sales {
   margin: 25px 0px;
-  align-self: left;
 }
-
+@media (max-width: 1156px) {
+  .news-section-wrapper .ios17 {
+    margin: 0px 5px 0px;
+  }
+  .news-section-wrapper .new-device {
+    margin: 0px 5px 20px;
+  }
+  .news-section-wrapper .new-audi {
+    margin: 0px 5px 0px;
+  }
+  .news-section-wrapper .samsung-ring {
+    margin: 0px 5px 0px;
+  }
+  .news-section-wrapper .apple-2022 {
+    margin: 0px 5px;
+  }
+  .news-section-wrapper .s22-sales {
+    margin: 0px 0px;
+  }
+}
 .wrapper .title h1 {
   font-weight: 600;
   font-size: 34px;
