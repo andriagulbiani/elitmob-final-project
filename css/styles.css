@@ -238,7 +238,7 @@ body .wrap {
   border-radius: 5px;
 }
 .header .responsive-header .burger-menu .hamburger.is-active:after {
-  opacity: 50%;
+  opacity: 10%;
 }
 .header .responsive-header .burger-menu .menu {
   font-family: "Roboto";
@@ -539,22 +539,52 @@ body .wrap {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 40px;
+  margin: 40px 0px 80px;
 }
 .news-section-wrapper .section-div:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 .news-section-wrapper .section-div {
   max-width: 370px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.35s ease;
+  position: relative;
 }
-.news-section-wrapper .section-div img {
-  max-width: 100%;
+.news-section-wrapper .section-div .date {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+}
+.news-section-wrapper .section-div .date p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: #333333;
+}
+.news-section-wrapper .section-div .date h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: #333333;
+}
+.news-section-wrapper .section-div .img-wrap {
+  width: 370px;
+  height: auto;
+  overflow: hidden;
+}
+.news-section-wrapper .section-div .img-wrap img {
+  width: 100%;
   transition: all 0.25s ease;
 }
-.news-section-wrapper .section-div img:hover {
-  transform: scale(1.01);
+.news-section-wrapper .section-div .img-wrap img:hover {
+  transform: scale(1.05);
 }
 .news-section-wrapper .text-wrap {
   display: flex;
@@ -563,6 +593,27 @@ body .wrap {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 40px 0px;
+  position: relative;
+}
+.news-section-wrapper .text-wrap .news-button {
+  position: absolute;
+  z-index: 2;
+  padding: 5px;
+  background-color: #8e03a4;
+  top: -15px;
+  left: 140px;
+}
+.news-section-wrapper .text-wrap .news-button p {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.news-section-wrapper .text-wrap .news-button p:hover {
+  color: #e0bae6;
 }
 .news-section-wrapper .text-wrap h1 {
   font-family: "Roboto";
@@ -594,47 +645,56 @@ body .wrap {
   padding: 15px 0px;
   transition: all 0.5s ease;
 }
+.news-section-wrapper .text-wrap .continiue {
+  color: #8e03a4;
+}
 .news-section-wrapper .text-wrap .continiue:hover {
-  color: purple;
+  color: #800080;
 }
 .news-section-wrapper .ios17 {
-  margin: 0px 5px -20px;
+  margin: 0px 10px -20px;
 }
 .news-section-wrapper .new-device {
-  margin: 0px 5px 20px;
+  margin: 0px 10px 20px;
 }
 .news-section-wrapper .new-audi {
-  margin: -45px 5px 0px;
+  margin: -45px 10px 0px;
 }
 .news-section-wrapper .samsung-ring {
-  margin: 0px 5px -20px;
+  margin: 0px 10px -20px;
 }
 .news-section-wrapper .apple-2022 {
-  margin: -70px 5px;
+  margin: -70px 10px;
 }
-.news-section-wrapper .s22-sales {
-  margin: 25px 0px;
+.news-section-wrapper .apple-store {
+  margin: 0px 10px 0px;
 }
 @media (max-width: 1156px) {
   .news-section-wrapper .ios17 {
-    margin: 0px 5px 0px;
+    margin: -70px 10px 0px;
   }
   .news-section-wrapper .new-device {
-    margin: 0px 5px 20px;
+    margin: 0px 10px 20px;
   }
   .news-section-wrapper .new-audi {
-    margin: 0px 5px 0px;
+    margin: 25px 10px 0px;
   }
   .news-section-wrapper .samsung-ring {
-    margin: 0px 5px 0px;
+    margin: 0px 10px 0px;
   }
   .news-section-wrapper .apple-2022 {
-    margin: 0px 5px;
+    margin: 0px 10px;
   }
-  .news-section-wrapper .s22-sales {
-    margin: 0px 0px;
+  .news-section-wrapper .apple-store {
+    margin: -95px 10px 0px;
   }
 }
+@media (max-width: 796px) {
+  .news-section-wrapper .section-div {
+    margin: 15px 0px;
+  }
+}
+
 .wrapper .title h1 {
   font-weight: 600;
   font-size: 34px;

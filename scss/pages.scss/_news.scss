@@ -4,27 +4,56 @@
 .news-section-wrapper {
     @include goFlex(row-reverse, space-evenly, flex-start);
     width: 100%;
-    margin-top: 40px;    
+    margin: 40px 0px 80px;   
 
 
 
 
     .section-div:hover {
-        box-shadow: 0 0 15px rgba(0, 0, 0, .30);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .40);
     }
 
     .section-div {
         max-width: 370px;
-        box-shadow: 0 0 4px rgba(0, 0, 0, .12);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .20);
         transition: box-shadow .35s ease;
+        position: relative;
 
-        img {
-            max-width: 100%;
-            transition: all 0.25s ease;
+        .date {
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+            text-align: center;
+            box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+
+            p {
+                @include robotoFont(400, 24px);
+                color: #333333;
+            }
+
+            h4 {
+                @include robotoFont(700, 14px);
+                color: #333333;
+
+            }
         }
 
-        img:hover {
-            transform: scale(1.01)
+        .img-wrap {
+            width: 370px;
+            height: auto;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: all 0.25s ease;
+            }
+    
+            img:hover {
+                transform: scale(1.05)
+            }
         }
 
 
@@ -33,6 +62,28 @@
     .text-wrap {
         @include goFlex(column, space-between, center);
         padding: 20px 40px 0px;
+        position: relative;
+
+
+        .news-button {
+            position: absolute;
+            z-index: 2;
+            padding: 5px;
+            background-color: #8e03a4;
+            top: -15px;
+            left: 140px;
+
+            p {
+                @include robotoFont(700, 13px);
+                letter-spacing: 0.5px;
+                color: #fff;
+                transition: all 0.4s ease;
+            }
+
+            p:hover {
+                color: #e0bae6;
+            }
+        }
     
         h1 {
             @include robotoFont(700, 24px);
@@ -63,67 +114,78 @@
             transition: all 0.5s ease;
         }
 
+        .continiue {
+            color: #8e03a4;
+        }
+
         .continiue:hover {
-            color: purple;
+            color: #800080;
         }
 
 
     }
 
     .ios17 {
-        margin: 0px 5px -20px;
+        margin: 0px 10px -20px;
     }
 
     .new-device {
-        margin: 0px 5px 20px;
+        margin: 0px 10px 20px;
     }
 
     .new-audi {
-        margin: -45px 5px 0px;
+        margin: -45px 10px 0px;
     }
 
     .samsung-ring {
-        margin: 0px 5px -20px;
+        margin: 0px 10px -20px;
     }
 
     .apple-2022 {
-        margin: -70px 5px;
+        margin: -70px 10px;
     }
 
-    .s22-sales {
-        margin: 25px 0px;
+    .apple-store {
+        margin: 0px 10px 0px;
     }
+
+
 
     @media (max-width: 1156px) {
 
         .ios17 {
-            margin: 0px 5px 0px;
+            margin: -70px 10px 0px;
         }
     
         .new-device {
-            margin: 0px 5px 20px;
+            margin: 0px 10px 20px;
         }
     
         .new-audi {
-            margin: 0px 5px 0px;
+            margin: 25px 10px 0px;
         }
     
         .samsung-ring {
-            margin: 0px 5px 0px;
+            margin: 0px 10px 0px;
         }
     
         .apple-2022 {
-            margin: 0px 5px;
+            margin: 0px 10px;
         }
-    
-        .s22-sales {
-            margin: 0px 0px;
+
+        .apple-store {
+            margin: -95px 10px 0px;
         }
 
     }
 
-    @media (max-width: 776px) {
-        
+
+
+    @media (max-width: 796px) {
+
+        .section-div {
+            margin: 15px 0px;
+        }
     }
 
 
