@@ -1,0 +1,35 @@
+.services-main {
+
+    
+    .services-section {
+        @include goFlex(column, space-between, normal, wrap);
+
+        .div {
+            @include goFlex(row, space-between, center, wrap);
+
+            .image {
+
+                img {
+                    width: 186px;
+                } 
+            }
+
+            .description {
+
+                h2 {
+                    @include robotoFont(500, 16px);
+                    color: #0a0a0a;
+                    letter-spacing: 0.5px
+                } 
+
+                p {
+                    @include robotoFont(300, 12px);
+                    color: #000000;
+                    letter-spacing: 0.3px
+
+                }
+            }
+
+        }
+    }
+}

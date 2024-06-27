@@ -956,4 +956,38 @@ body .wrap {
 }
 .audi-5-g-main section .icons .telegram:hover {
   background-color: #2f95c2;
+}
+
+.services-main .services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: normal;
+  flex-wrap: wrap;
+}
+.services-main .services-section .div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services-main .services-section .div .image img {
+  width: 186px;
+}
+.services-main .services-section .div .description h2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #0a0a0a;
+  letter-spacing: 0.5px;
+}
+.services-main .services-section .div .description p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+  color: #000000;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=styles.css.map */
