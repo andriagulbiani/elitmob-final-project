@@ -964,6 +964,7 @@ body .wrap {
   justify-content: space-between;
   align-items: normal;
   flex-wrap: wrap;
+  max-width: 800px;
 }
 .services-main .services-section .div {
   display: flex;
@@ -971,6 +972,8 @@ body .wrap {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  outline: 1px dotted gray;
+  margin: 10px;
 }
 .services-main .services-section .div .image img {
   width: 186px;
@@ -979,7 +982,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1;
+  line-height: 2;
   color: #0a0a0a;
   letter-spacing: 0.5px;
 }
@@ -987,7 +990,7 @@ body .wrap {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 12px;
-  line-height: 1;
+  line-height: 2;
   color: #000000;
   letter-spacing: 0.3px;
 }/*# sourceMappingURL=styles.css.map */

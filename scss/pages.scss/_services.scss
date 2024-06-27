@@ -3,9 +3,12 @@
     
     .services-section {
         @include goFlex(column, space-between, normal, wrap);
+        max-width: 800px;
 
         .div {
             @include goFlex(row, space-between, center, wrap);
+            outline: 1px dotted gray;
+            margin: 10px;
 
             .image {
 
@@ -17,13 +20,13 @@
             .description {
 
                 h2 {
-                    @include robotoFont(500, 16px);
+                    @include robotoFont(500, 16px, 2);
                     color: #0a0a0a;
                     letter-spacing: 0.5px
                 } 
 
                 p {
-                    @include robotoFont(300, 12px);
+                    @include robotoFont(300, 12px, 2);
                     color: #000000;
                     letter-spacing: 0.3px
 
