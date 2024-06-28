@@ -759,6 +759,14 @@ body .wrap {
   }
 }
 
+.wrapper .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
 .wrapper .title h1 {
   font-weight: 600;
   font-size: 34px;
