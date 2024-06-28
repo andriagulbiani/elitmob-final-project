@@ -301,6 +301,12 @@ body .wrap {
   font-size: 13px;
   line-height: 1.3;
 }
+.mobile-nav a:hover {
+  color: #8e03a4;
+}
+.mobile-nav .header-main {
+  color: #8e03a4 !important;
+}
 
 .mobile-nav.is-active {
   right: 55%;
