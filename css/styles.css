@@ -106,6 +106,9 @@ body .wrap {
 .header .top .header-img .tbc-logo {
   width: 50px;
 }
+.header .top .header-img .tbc-logo2 {
+  margin-bottom: 25px;
+}
 .header .top ul {
   display: flex;
   margin-bottom: 0px;
@@ -241,6 +244,7 @@ body .wrap {
   background-color: #333333;
   border-radius: 5px;
   transition: all 0.5s ease;
+  margin-bottom: 4px;
 }
 .header .responsive-header .burger-menu .hamburger.is-active:after {
   transform: rotate(45deg) translate(-7px, 0px);
@@ -267,6 +271,9 @@ body .wrap {
 }
 .header .responsive-header .icon .tbc-logo {
   width: 35px;
+}
+.header .responsive-header .icon .tbc-logo2 {
+  margin-bottom: 10px;
 }
 .header .responsive-header .search {
   padding: 0px 10px;

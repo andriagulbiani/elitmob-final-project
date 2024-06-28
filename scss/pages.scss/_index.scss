@@ -29,6 +29,10 @@ body {
             .tbc-logo {
                 width: 50px;
             }
+
+            .tbc-logo2 {
+                margin-bottom: 25px;
+            }
         }
 
         ul {
@@ -155,6 +159,7 @@ body {
                 background-color: #333333;
                 border-radius: 5px;
                 transition: all 0.5s ease;
+                margin-bottom: 4px;
             }
 
             .hamburger.is-active:after {
@@ -190,6 +195,10 @@ body {
 
             .tbc-logo {
                 width: 35px;
+            }
+
+            .tbc-logo2 {
+                margin-bottom: 10px;
             }
         }
 
