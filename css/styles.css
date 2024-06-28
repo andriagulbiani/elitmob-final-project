@@ -103,6 +103,9 @@ body .wrap {
 .header .top .header-img {
   padding: 0px 15px;
 }
+.header .top .header-img .tbc-logo {
+  width: 50px;
+}
 .header .top ul {
   display: flex;
   margin-bottom: 0px;
