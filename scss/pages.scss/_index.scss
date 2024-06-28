@@ -218,7 +218,7 @@ body {
 }
 
 .mobile-nav {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     right: 100%;
@@ -253,6 +253,10 @@ body {
 
 .mobile-nav.is-active {
     right: 55%;
+
+    @media (max-width: 900px) {
+        display: block;
+    }
 }
 
 
