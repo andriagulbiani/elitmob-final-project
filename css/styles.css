@@ -825,48 +825,213 @@ body .wrap {
   transform: scale(1.02);
 }
 
+.phones-main .section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.phones-main .section1 .phones-carousel img {
+  max-width: 550px;
+}
+.phones-main .section1 .phones-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.phones-main .section1 .phones-information .text {
+  width: 600px;
+}
 .phones-main .section1 .phones-information .text h1 {
+  font-family: "Roboto";
   font-weight: 600;
   font-size: 34px;
+  line-height: 1;
   color: #2d2a2a;
   text-align: center;
   margin-bottom: 20px;
 }
-.phones-main .section1 .phones-information .text .storage {
+@media (max-width: 1024px) {
+  .phones-main .section1 .phones-information .text h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .phones-main .section1 .phones-information .text h1 {
+    font-size: 20px;
+  }
+}
+.phones-main .section1 .phones-information .text .top .storage {
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1;
   color: #222222;
 }
-.phones-main .section1 .phones-information .text .storage span {
+.phones-main .section1 .phones-information .text .top .storage .in.storage {
   color: green;
 }
-.phones-main .section1 .phones-information .text .condition-p {
+.phones-main .section1 .phones-information .text .top .condition-p {
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1;
   color: #222222;
 }
-.phones-main .section1 .phones-information .text .condition-p span {
+.phones-main .section1 .phones-information .text .top .condition-p span {
   font-weight: 600;
 }
-.phones-main .section1 .phones-information .text .with-phone {
+.phones-main .section1 .phones-information .text .bottom {
+  border-top: 1px dashed #dedede;
+  padding-top: 10px;
+  margin-top: 30px;
+  text-align: left;
+}
+.phones-main .section1 .phones-information .text .bottom .with-phone {
+  font-family: "Roboto";
   font-weight: 600;
   font-size: 16px;
+  line-height: 1;
+  color: #777777;
+  margin-bottom: 20px;
+}
+.phones-main .section1 .phones-information .text .bottom .usb {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1;
   color: #777777;
 }
-.phones-main .section1 .phones-information .text .usb {
-  font-weight: 400;
+.phones-main .section1 .phones-information .text .bottom .screen-protector {
+  font-family: "Roboto";
+  font-weight: 600;
   font-size: 13px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.phones-main .section1 .phones-information .text .bottom .delivery {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.phones-main .section1 .phones-information .condition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.phones-main .section1 .phones-information .condition button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.phones-main .section1 .phones-information .condition button div {
+  width: 250px;
+  height: 100px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  margin: 5px 0px;
+  transition: all 0.4s ease;
+}
+.phones-main .section1 .phones-information .condition button div h1 {
   color: #777777;
+  font-weight: bold;
+  transition: all 0.4s ease;
 }
-.phones-main .section1 .phones-information .text .screen-protector {
-  font-weight: 400;
-  font-size: 13px;
-  color: #000000;
+.phones-main .section1 .phones-information .condition button div h2 {
+  color: #777777;
+  font-weight: bold;
+  transition: all 0.4s ease;
 }
-.phones-main .section1 .phones-information .text .delivery {
+.phones-main .section1 .phones-information .condition button div p {
+  color: #777777;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+.phones-main .section1 .phones-information .condition button .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -1px;
+  border-radius: 5px 0px 0px 5px;
+}
+.phones-main .section1 .phones-information .condition button .left h1 {
+  font-size: 50px;
+}
+.phones-main .section1 .phones-information .condition button .left p {
+  font-size: 12px;
+  max-width: 150px;
+}
+.phones-main .section1 .phones-information .condition button .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0px 5px 5px 0px;
+}
+.phones-main .section1 .phones-information .condition button .right h2 {
+  font-size: 20px;
+}
+.phones-main .section1 .phones-information .condition button:hover div {
+  background-color: #8e03a4;
+}
+.phones-main .section1 .phones-information .condition button:hover h1 {
+  color: #fff;
+}
+.phones-main .section1 .phones-information .condition button:hover h2 {
+  color: #fff;
+}
+.phones-main .section1 .phones-information .condition button:hover p {
+  color: #fff;
+}
+.phones-main .section1 .phones-information .payment .payment-text {
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: 13px;
-  color: #000000;
+  font-size: 16px;
+  line-height: 1;
+  color: #777777;
+  text-align: center;
+  margin: 25px;
+}
+.phones-main .section1 .phones-information .payment .payment-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.phones-main .section1 .phones-information .payment .payment-images img {
+  border: 1px solid #dedede;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+.phones-main .section1 .phones-information .payment .payment-images .bog {
+  background-color: #ff600a;
 }
 
 .audi-5-g-main section {

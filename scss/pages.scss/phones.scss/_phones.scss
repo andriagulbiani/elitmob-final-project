@@ -1,0 +1,210 @@
+.phones-main {
+
+    .section1 {
+        @include goFlex(row, space-evenly, center);
+
+
+        .phones-carousel {
+
+            img {
+                max-width: 550px;
+            }
+
+        }
+
+        .phones-information {
+            @include goFlex(column, space-between, flex-start);
+            
+            .text {
+                width: 600px;
+
+                h1 {
+                    @include robotoFont(600, 34px);
+                    color: #2d2a2a;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    @media (max-width: 1024px) {
+
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                    }
+
+                    @media (max-width: 768px) {
+
+                        font-size: 20px;
+                    }
+                }
+
+                .top {
+
+
+                    .storage {
+                        @include robotoFont(400, 14px);
+                        color: #222222;
+
+    
+                        .in.storage {
+                            color: green
+                        }
+                    }
+    
+                    .condition-p {
+                        @include robotoFont(400, 14px);
+                        color: #222222;
+    
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .bottom {
+                    border-top: 1px dashed #dedede;
+                    padding-top: 10px;
+                    margin-top: 30px;
+                    text-align: left;
+
+                    .with-phone {
+                        @include robotoFont(600, 16px);
+                        color: #777777;
+                        margin-bottom: 20px
+                    }
+    
+                    .usb {
+                        @include robotoFont(400, 13px);
+                        color: #777777;
+                    }
+    
+                    .screen-protector {
+                        @include robotoFont(600, 13px);
+                        color: #000000;
+                        margin-bottom: 20px
+                    }
+    
+                    .delivery {
+                        @include robotoFont(600, 13px);
+                        color: #000000;
+                        margin-bottom: 20px
+                    }
+                }
+            }
+
+            .condition {
+                @include goFlex(column, space-between, flex-start);
+
+
+
+                button {
+                    @include goFlex(row, space-between, center);  
+                    vertical-align: middle;  
+                    margin: 0;
+                    padding: 0;
+                    transition: all 0.4s ease;
+
+                    appearance: none;
+                    background: none;
+                    outline: none;
+                    border: none;
+
+                    div {
+                        width: 250px;
+                        height: 100px;
+                        border: 1px solid #dedede;  
+                        border-radius: 10px;
+                        margin: 5px 0px;
+                        transition: all 0.4s ease;
+
+                        h1 {
+                            color: #777777;
+                            font-weight: bold;
+                            transition: all 0.4s ease;
+                        }
+
+                        h2 {
+                            color: #777777;
+                            font-weight: bold;
+                            transition: all 0.4s ease;
+                        }
+
+                        p {
+                            color: #777777;
+                            font-weight: bold;
+                            transition: all 0.4s ease;
+                        }
+                    }
+
+                    .left {
+                        @include goFlex(row, space-evenly, center);
+                        margin-right: -1px;
+                        border-radius: 5px 0px 0px 5px;
+
+                        h1 {
+                            font-size: 50px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            max-width: 150px;
+                        }
+                    }
+
+                    .right {
+                        @include goFlex(column, space-around, center);
+                        border-radius: 0px 5px 5px 0px;
+
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                button:hover {
+                    div {
+                        background-color: #8e03a4;
+                    }
+                    
+                    h1 {
+                        color: #fff;
+                    }
+
+                    h2 {
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .payment {
+
+                .payment-text {
+                    @include robotoFont(400, 16px);
+                    color: #777777;
+                    text-align: center;
+                    margin: 25px;
+                }
+
+
+                .payment-images {
+                    @include goFlex(row, space-between, center);
+
+
+                    img {
+                        border: 1px solid #dedede;
+                        height: 50px;
+                        margin: 10px;
+                        padding: 10px;
+                    }
+    
+
+                    .bog {
+                        background-color: #ff600a;
+                    }
+                }
+            }
+        }
+    }
+}
