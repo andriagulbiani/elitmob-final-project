@@ -26,8 +26,21 @@ body {
         .header-img {
             padding: 0px 15px;
 
+            .elitmob-icon {
+                transition: all 0.25s ease;
+            }
+
+            .elitmob-icon:hover {
+                transform: scale(1.05);
+            }
+
             .tbc-logo {
                 width: 50px;
+                transition: all 0.25s ease;
+            }
+
+            .tbc-logo:hover {
+                transform: scale(1.1);
             }
 
             .tbc-logo2 {
@@ -183,10 +196,6 @@ body {
             .menu {
                 @include robotoFont(700, 14px);
             }
-
-
-
-
         }
 
         .icon {
@@ -195,6 +204,7 @@ body {
                 max-width: 140px;
                 max-height: 60px;
                 padding: 5px 0px;
+                transition: all 0.25s ease;
             }
 
             .tbc-logo {
@@ -203,6 +213,14 @@ body {
 
             .tbc-logo2 {
                 margin-bottom: 10px;
+            }
+
+            .elitmob-icon:hover {
+                transform: scale(1.05);
+            }
+
+            .tbc-logo:hover {
+                transform: scale(1.1);
             }
         }
 

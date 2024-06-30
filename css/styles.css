@@ -103,8 +103,18 @@ body .wrap {
 .header .top .header-img {
   padding: 0px 15px;
 }
+.header .top .header-img .elitmob-icon {
+  transition: all 0.25s ease;
+}
+.header .top .header-img .elitmob-icon:hover {
+  transform: scale(1.05);
+}
 .header .top .header-img .tbc-logo {
   width: 50px;
+  transition: all 0.25s ease;
+}
+.header .top .header-img .tbc-logo:hover {
+  transform: scale(1.1);
 }
 .header .top .header-img .tbc-logo2 {
   margin-bottom: 25px;
@@ -268,12 +278,19 @@ body .wrap {
   max-width: 140px;
   max-height: 60px;
   padding: 5px 0px;
+  transition: all 0.25s ease;
 }
 .header .responsive-header .icon .tbc-logo {
   width: 35px;
 }
 .header .responsive-header .icon .tbc-logo2 {
   margin-bottom: 10px;
+}
+.header .responsive-header .icon .elitmob-icon:hover {
+  transform: scale(1.05);
+}
+.header .responsive-header .icon .tbc-logo:hover {
+  transform: scale(1.1);
 }
 .header .responsive-header .search {
   padding: 0px 10px;
@@ -834,6 +851,10 @@ body .wrap {
 }
 .phones-main .section1 .phones-carousel img {
   max-width: 550px;
+  transition: all 0.3s ease;
+}
+.phones-main .section1 .phones-carousel img:hover {
+  transform: scale(1.1);
 }
 .phones-main .section1 .phones-information {
   display: flex;
@@ -1041,9 +1062,13 @@ body .wrap {
   height: 50px;
   margin: 10px;
   padding: 10px;
+  transition: all 0.3s ease;
 }
 .phones-main .section1 .phones-information .payment .payment-images .bog {
   background-color: #ff600a;
+}
+.phones-main .section1 .phones-information .payment .payment-images img:hover {
+  transform: scale(1.1);
 }
 .phones-main .section2 {
   display: flex;
@@ -1103,7 +1128,7 @@ body .wrap {
 .phones-main .section2 .comment-div .left .comment-wrap .img-div {
   border: 2px solid #dedede !important;
   border-radius: 3px !important;
-  padding: 4px;
+  padding: 4px 4px 0px;
   margin: 0px 25px 0px 0px;
 }
 .phones-main .section2 .comment-div .left .comment-wrap .img-div img {
