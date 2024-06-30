@@ -1008,6 +1008,18 @@ body .wrap {
 .phones-main .section1 .phones-information .condition button:hover p {
   color: #fff;
 }
+.phones-main .section1 .phones-information .condition .price-btn.clicked div {
+  background-color: #8e03a4;
+}
+.phones-main .section1 .phones-information .condition .price-btn.clicked h1 {
+  color: #fff;
+}
+.phones-main .section1 .phones-information .condition .price-btn.clicked h2 {
+  color: #fff;
+}
+.phones-main .section1 .phones-information .condition .price-btn.clicked p {
+  color: #fff;
+}
 .phones-main .section1 .phones-information .payment .payment-text {
   font-family: "Roboto";
   font-weight: 400;
@@ -1032,6 +1044,114 @@ body .wrap {
 }
 .phones-main .section1 .phones-information .payment .payment-images .bog {
   background-color: #ff600a;
+}
+.phones-main .section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-top: 1px solid black;
+  padding-top: 40px;
+}
+.phones-main .section2 .section-2-text {
+  width: 100%;
+  max-width: 1160px;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  margin: 0px 20px 10px;
+}
+.phones-main .section2 .section-2-text h1 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  color: #333333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.35s ease;
+}
+.phones-main .section2 .section-2-text h1:hover {
+  color: #8e03a4;
+}
+.phones-main .section2 .comment-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.phones-main .section2 .comment-div .left .left-div {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border: 2px dashed #000000 !important;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 20px;
+}
+.phones-main .section2 .comment-div .left .comment-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.phones-main .section2 .comment-div .left .comment-wrap .img-div {
+  border: 2px solid #000000 !important;
+  border-radius: 3px !important;
+  padding: 4px;
+  margin: 0px 25px 0px 0px;
+}
+.phones-main .section2 .comment-div .left .comment-wrap .img-div img {
+  max-width: 50px;
+}
+.phones-main .section2 .comment-div .left .comment-wrap .text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+.phones-main .section2 .comment-div .left .comment-wrap .text-wrap p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #777;
+  margin: 8px 0px;
+}
+.phones-main .section2 .comment-div .left .comment-wrap .text-wrap strong {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #2d2a2a;
+}
+.phones-main .section2 .comment-div .left .comment-wrap .text-wrap span {
+  font-style: italic;
+}
+.phones-main .section2 .comment-div .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+.phones-main .section2 .comment-div .right h1 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #777;
+}
+.phones-main .section2 .comment-div .right span {
+  color: #E01020;
+  font-size: 16px;
 }
 
 .audi-5-g-main section {
