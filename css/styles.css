@@ -1051,14 +1051,15 @@ body .wrap {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  border-top: 1px solid black;
+  margin-bottom: 50px;
+  border-top: 1px solid rgba(129, 129, 129, 0.2);
   padding-top: 40px;
 }
 .phones-main .section2 .section-2-text {
   width: 100%;
   max-width: 1160px;
-  border-top: 2px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid rgba(119, 119, 119, 0.17);
+  border-bottom: 1px solid rgba(119, 119, 119, 0.17);
   margin: 0px 20px 10px;
 }
 .phones-main .section2 .section-2-text h1 {
@@ -1078,7 +1079,7 @@ body .wrap {
 .phones-main .section2 .comment-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
@@ -1087,7 +1088,7 @@ body .wrap {
   max-width: 500px;
   width: 100%;
   height: auto;
-  border: 2px dashed #000000 !important;
+  border: 2px dashed #dedede !important;
   border-radius: 10px;
   padding: 10px;
   margin: 10px 20px;
@@ -1100,7 +1101,7 @@ body .wrap {
   flex-wrap: wrap;
 }
 .phones-main .section2 .comment-div .left .comment-wrap .img-div {
-  border: 2px solid #000000 !important;
+  border: 2px solid #dedede !important;
   border-radius: 3px !important;
   padding: 4px;
   margin: 0px 25px 0px 0px;
@@ -1140,14 +1141,88 @@ body .wrap {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 550px;
+  margin-left: 100px;
 }
-.phones-main .section2 .comment-div .right h1 {
+.phones-main .section2 .comment-div .right .description h1 {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   color: #777;
+}
+.phones-main .section2 .comment-div .right .comment-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 25px 0px;
+}
+.phones-main .section2 .comment-div .right .comment-text textarea {
+  width: 100%;
+  max-width: 570px;
+  font-size: 14px;
+  transition: border-color 0.5s ease;
+  overflow: auto;
+  padding: 10px 15px;
+  min-height: 190px;
+  border-radius: 10px;
+  border: 2px dashed #dedede;
+}
+.phones-main .section2 .comment-div .right .user-mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.phones-main .section2 .comment-div .right .user-mail .input-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 48%;
+}
+.phones-main .section2 .comment-div .right .user-mail .input-text label {
+  color: #464646;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.phones-main .section2 .comment-div .right .user-mail .input-text input {
+  border-radius: 10px;
+  border: 2px dashed #dedede;
+  padding: 0 15px;
+  width: 100%;
+  height: 42px;
+  transition: border-color 0.5s ease;
+}
+.phones-main .section2 .comment-div .right .bottom-text {
+  margin-top: 20px;
+}
+.phones-main .section2 .comment-div .right .bottom-text label {
+  color: #464646;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.phones-main .section2 .comment-div .right .bottom-text .submit {
+  padding: 12px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  background-color: #8e03a4;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.phones-main .section2 .comment-div .right .bottom-text input:hover {
+  background-color: purple;
+  transform: scale(1.05);
 }
 .phones-main .section2 .comment-div .right span {
   color: #E01020;

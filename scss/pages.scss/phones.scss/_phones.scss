@@ -230,18 +230,16 @@
 
     .section2 {
         @include goFlex(column, space-between, flex-start);
+        margin-bottom: 50px;
 
-        border-top: 1px solid black;
-        // border-color: rgba(129, 129, 129, .2);
+        border-top: 1px solid rgba(129, 129, 129, .2);
         padding-top: 40px;
 
         .section-2-text {
             width: 100%;
             max-width: 1160px;
-            // border-top: 2px solid rgba(119, 119, 119, .17);
-            // border-bottom: 1px solid rgba(119, 119, 119, .17);
-            border-top: 2px solid black;
-            border-bottom: 1px solid black;
+            border-top: 2px solid rgba(119, 119, 119, .17);
+            border-bottom: 1px solid rgba(119, 119, 119, .17);
             margin: 0px 20px 10px;
 
             h1 {
@@ -259,7 +257,7 @@
         }
 
         .comment-div {
-            @include goFlex(row, space-between, flex-start);
+            @include goFlex(row, flex-start, flex-start);
             width: 100%;
 
             .left {
@@ -268,7 +266,7 @@
                     max-width: 500px;
                     width: 100%;
                     height: auto;
-                    border: 2px dashed #000000 !important;
+                    border: 2px dashed #dedede !important;
                     border-radius: 10px;
                     padding: 10px;
                     margin: 10px 20px;
@@ -278,7 +276,7 @@
                     @include goFlex(row, flex-start, center);
 
                     .img-div {
-                        border: 2px solid #000000 !important;
+                        border: 2px solid #dedede !important;
                         border-radius: 3px !important;
                         padding: 4px;
                         margin: 0px 25px 0px 0px;
@@ -316,11 +314,87 @@
 
             .right {
                 @include goFlex(column, space-between, center);
-                max-width: 600px;
+                max-width: 550px;
+                margin-left: 100px;
 
-                h1 {
-                    @include robotoFont(400, 16px);
-                    color: #777;
+                .description {
+                    h1 {
+                        @include robotoFont(400, 16px);
+                        color: #777;
+                    }
+                }
+
+                .comment-text {
+                    @include goFlex(column, flex-start, flex-start);
+                    width: 100%;
+                    margin: 25px 0px;
+
+                    textarea {
+                        width: 100%;
+                        max-width: 570px;
+                        font-size: 14px;
+                        transition: border-color .5s ease;
+                        overflow: auto;
+                        padding: 10px 15px;
+                        min-height: 190px;
+                        border-radius: 10px;
+                        border: 2px dashed #dedede;
+                    }
+                }
+
+                .user-mail {
+                    @include goFlex(row, space-between, center);
+                    width: 100%;
+
+                    .input-text {
+                        @include goFlex(column, space-between, flex-start);
+                        width: 48%;
+
+                        label {
+                            color: #464646;
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+
+                        input {
+                            border-radius: 10px;
+                            border: 2px dashed #dedede;
+                            padding: 0 15px;
+                            width: 100%;
+                            height: 42px;
+                            transition: border-color .5s ease;
+                        }
+                    }
+                }
+
+                .bottom-text {
+                    margin-top: 20px;
+
+                    label {
+                        color: #464646;
+                        font-size: 16px;
+                        margin-bottom: 14px;
+                    }
+
+                    .submit {
+                        padding: 12px 20px;
+                        margin: 10px 5px;
+                        border-radius: 5px;
+                        color: white;
+                        font-weight: 600;
+                        background-color: #8e03a4;
+                        border-radius: 3px;
+                        outline: none;
+                        border: none;
+                        transition: all 0.3s ease;
+
+
+                    }
+
+                    input:hover {
+                        background-color: purple;
+                        transform: scale(1.05);
+                    }
                 }
 
                 span {
