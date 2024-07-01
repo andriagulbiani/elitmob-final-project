@@ -70,7 +70,7 @@ body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fafafa !important;
 }
 body .wrap {
   max-width: 1200px;
@@ -893,7 +893,7 @@ body .wrap {
   line-height: 1;
   color: #222222;
 }
-.phones-main .section1 .phones-information .text .top .storage .in.storage {
+.phones-main .section1 .phones-information .text .top .in-storage {
   color: green;
 }
 .phones-main .section1 .phones-information .text .top .condition-p {

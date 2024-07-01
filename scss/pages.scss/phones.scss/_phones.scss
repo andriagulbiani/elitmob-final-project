@@ -47,11 +47,10 @@
                     .storage {
                         @include robotoFont(400, 14px);
                         color: #222222;
+                    }
 
-    
-                        .in.storage {
-                            color: green
-                        }
+                    .in-storage {
+                        color: green;
                     }
     
                     .condition-p {
