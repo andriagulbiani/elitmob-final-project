@@ -80,6 +80,13 @@ body .wrap {
   box-shadow: 0 1px 9px rgba(0, 0, 0, 0.08);
 }
 
+.header.is-active {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: white;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -337,6 +344,7 @@ body .wrap {
 }
 
 .mobile-nav.is-active {
+  overflow: hidden;
   right: 55%;
 }
 @media (max-width: 900px) {

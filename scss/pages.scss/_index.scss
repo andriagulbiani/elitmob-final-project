@@ -12,6 +12,13 @@ body {
     }
 }
 
+.header.is-active {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
 .header {
     @include goFlex(column);
 
@@ -146,6 +153,8 @@ body {
             display: flex;
         }
 
+
+
         .burger-menu {
             @include goFlex(row);
             color: #333333; 
@@ -198,6 +207,8 @@ body {
             }
         }
 
+
+
         .icon {
 
             img {
@@ -235,6 +246,9 @@ body {
     }
 }
 
+
+
+
 .mobile-nav {
     display: none;
     position: fixed;
@@ -269,13 +283,17 @@ body {
 
 
 
+
+
 .mobile-nav.is-active {
+    overflow: hidden;
     right: 55%;
 
     @media (max-width: 900px) {
         display: block;
     }
 }
+
 
 
 
@@ -451,21 +469,3 @@ body {
         transform: scale(1.15);
     }
 }
-
-// .hamburger {
-//     width: 50px;
-//     height: 50px;
-//     display: block;
-//     background-color: black;
-// }
-
-// .hamburger .bar, .hamburger:before, .hamburger:after {
-//     display: block;
-//     content: '';
-//     width: 100%;
-//     height: 5px;
-//     background-color: #fff;
-//     margin: 6px 0px;
-// }
-
-
