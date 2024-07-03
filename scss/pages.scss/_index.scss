@@ -114,6 +114,10 @@ body {
                 width: 290px;
             }
 
+            input:focus {
+                outline: none;
+            }
+
             button {
                 position: absolute;
                 background-color: #8e03a4;
@@ -241,6 +245,11 @@ body {
             .search-icon {
                 font-size: 18px;
                 color: #333333;
+                transition: all 0.25s linear;
+            }
+
+            .search-icon:hover {
+                transform: scale(1.1);
             }
         }
     }
@@ -259,7 +268,7 @@ body {
     z-index: 98;
     background-color: white;
     padding-top: 70px;
-    transition: 0.5s;
+    transition: all 0.5s ease;
 
     a {
         @include goFlex(row, flex-start, center);
@@ -288,6 +297,7 @@ body {
 .mobile-nav.is-active {
     overflow: hidden;
     right: 55%;
+
 
     @media (max-width: 900px) {
         display: block;
@@ -428,6 +438,11 @@ body {
 
         img {
             height: 55px;
+            transition: all 0.25s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
         }
     }
 
@@ -442,16 +457,8 @@ body {
 }
 
 .scroll-on-top {
-    position: fixed;
-    right: 12px;
-    bottom: 12px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, .9);
-    box-shadow: 0 0 5px rgba(0, 0, 0, .17);
+
     color: #333;
-    text-align: center;
     font-size: 0;
     transition: all 1s ease;
 
@@ -468,4 +475,29 @@ body {
     i{
         transform: scale(1.15);
     }
+}
+
+
+
+
+.scroll-button {
+    position: fixed;
+    right: -50px;
+    bottom: 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .17);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.scroll-button.is-scrolling {
+    right: 12px;
+}
+
+.scroll-button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
 }

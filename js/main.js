@@ -1,11 +1,14 @@
 window.onload = function () {
 	window.addEventListener('scroll', function (e) {
 		if (window.pageYOffset > 100) {
-			document.querySelector("header").classList.add('is-scrolling');
+			document.querySelector(".scroll-button").classList.add('is-scrolling');
 		} else {
-			document.querySelector("header").classList.remove('is-scrolling');
+			document.querySelector(".scroll-button").classList.remove('is-scrolling');
 		}
 	});
+
+
+	
 
 	const menu_btn = document.querySelector('.hamburger');
 	const mobile_menu = document.querySelector('.mobile-nav');
@@ -24,5 +27,9 @@ window.onload = function () {
 		  btn.classList.add('clicked');
 		});
 	  });
+
+
+
+	  
 
 }
