@@ -551,12 +551,17 @@ body .wrap {
 @media (max-width: 800px) {
   .contact-main .contact-section-1 {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 .contact-main .left {
   min-width: 350px;
   padding: 0px 20px;
+}
+@media (max-width: 800px) {
+  .contact-main .left {
+    text-align: center;
+  }
 }
 .contact-main .left .text h1 {
   font-size: 22px;
@@ -880,12 +885,17 @@ body .wrap {
   align-items: center;
   flex-wrap: wrap;
 }
-.phones-main .section1 .phones-carousel img {
+.phones-main .section1 .phones-carousel {
   max-width: 550px;
+  width: 100%;
+}
+.phones-main .section1 .phones-carousel img {
+  max-width: 500px;
+  width: 100%;
   transition: all 0.3s ease;
 }
 .phones-main .section1 .phones-carousel img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .phones-main .section1 .phones-information {
   display: flex;
@@ -893,6 +903,7 @@ body .wrap {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-top: 70px;
 }
 .phones-main .section1 .phones-information .text {
   width: 600px;
@@ -916,6 +927,9 @@ body .wrap {
   .phones-main .section1 .phones-information .text h1 {
     font-size: 20px;
   }
+}
+.phones-main .section1 .phones-information .text p {
+  padding: 5px 0px;
 }
 .phones-main .section1 .phones-information .text .top .storage {
   font-family: "Roboto";
@@ -1227,6 +1241,9 @@ body .wrap {
   border-radius: 10px;
   border: 2px dashed #dedede;
 }
+.phones-main .section2 .comment-div .right .comment-text textarea:focus {
+  outline: none;
+}
 .phones-main .section2 .comment-div .right .user-mail {
   display: flex;
   flex-direction: row;
@@ -1255,6 +1272,9 @@ body .wrap {
   width: 100%;
   height: 42px;
   transition: border-color 0.5s ease;
+}
+.phones-main .section2 .comment-div .right .user-mail .input-text input:focus {
+  outline: none;
 }
 .phones-main .section2 .comment-div .right .bottom-text {
   margin-top: 20px;

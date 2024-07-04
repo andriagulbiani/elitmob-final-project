@@ -5,20 +5,24 @@
 
 
         .phones-carousel {
+            max-width: 550px;
+            width: 100%;
 
             img {
-                max-width: 550px;
+                max-width: 500px;
+                width: 100%;
                 transition: all 0.3s ease;
             }
 
             img:hover {
-                transform: scale(1.1)
+                transform: scale(1.05)
             }
 
         }
 
         .phones-information {
             @include goFlex(column, space-between, flex-start);
+            margin-top: 70px;
             
             .text {
                 width: 600px;
@@ -39,6 +43,10 @@
 
                         font-size: 20px;
                     }
+                }
+
+                p {
+                    padding: 5px 0px;
                 }
 
                 .top {
@@ -349,6 +357,10 @@
                         border-radius: 10px;
                         border: 2px dashed #dedede;
                     }
+
+                    textarea:focus {
+                        outline: none;
+                    }
                 }
 
                 .user-mail {
@@ -372,6 +384,10 @@
                             width: 100%;
                             height: 42px;
                             transition: border-color .5s ease;
+                        }
+
+                        input:focus {
+                            outline: none;
                         }
                     }
                 }
