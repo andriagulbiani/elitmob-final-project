@@ -1,7 +1,7 @@
 .phones-main {
 
     .section1 {
-        @include goFlex(row, space-evenly, center);
+        @include goFlex(row, space-evenly, center, nowrap);
 
 
         .phones-carousel {
@@ -9,7 +9,7 @@
             width: 100%;
 
             img {
-                max-width: 500px;
+                max-width: 450px;
                 width: 100%;
                 transition: all 0.3s ease;
             }
@@ -17,6 +17,8 @@
             img:hover {
                 transform: scale(1.05)
             }
+
+        
 
         }
 
@@ -243,6 +245,32 @@
                 }
             }
         }
+    }
+
+    @media (max-width: 1000px) {
+
+        .section1 {
+            flex-wrap: wrap
+        }
+
+        .phones-carousel {
+            @include goFlex(column, center, center);
+            
+            img {
+                margin-top: 70px
+            }
+        }
+
+        .phones-information {
+            justify-content: space-evenly !important;
+            align-items: center !important;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
     }
 
     .section2 {
