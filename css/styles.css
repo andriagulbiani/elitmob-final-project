@@ -1168,12 +1168,17 @@ body .wrap {
 .phones-main .section2 .section-2-text h1:hover {
   color: #8e03a4;
 }
+@media (max-width: 1000px) {
+  .phones-main .section2 .comment-div {
+    justify-content: center;
+  }
+}
 .phones-main .section2 .comment-div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 .phones-main .section2 .comment-div .left .left-div {

@@ -301,9 +301,16 @@
             }
         }
 
+        @media (max-width: 1000px) {
+            .comment-div {
+                justify-content: center
+            }    
+        }
+
         .comment-div {
-            @include goFlex(row, flex-start, flex-start);
+            @include goFlex(row, flex-start, flex-start, nowrap);
             width: 100%;
+
 
             .left {
 
