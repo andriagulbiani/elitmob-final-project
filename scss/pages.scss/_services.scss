@@ -28,11 +28,26 @@
                 p {
                     @include robotoFont(300, 12px, 2);
                     color: #000000;
-                    letter-spacing: 0.3px
+                    letter-spacing: 0.3px;
 
                 }
             }
 
+        }
+    }
+}
+
+
+.services-section {
+    max-width: 1200px !important;
+
+    .services-text-div {
+        text-align: center;
+        margin: 50px 30px;
+    
+        h1 {
+            @include robotoFont(900, 32px, 50px);
+            color: #333333;
         }
     }
 }
